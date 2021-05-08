@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'MyHomePage.dart';
+import 'login.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,14 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'FlutterKO-s',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Welcome to Flutter'),
-        ),
-        body: Center(
-          child: Text('Hello World'),
-        ),
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      home: LoginPage(),
     );
   }
 }
