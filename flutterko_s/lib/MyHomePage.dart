@@ -21,9 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
     var post = new Post(text, widget.user.displayName);
     post.setId(savePost(post));
     this.setState(() {
-      if (text != "") {
-        posts.add(post);
-      }
+      posts.add(post);
     });
   }
 
